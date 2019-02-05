@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+  text-decoration: none; }
+
+header {
+  background-image: url("/img/BGs/hp-imag-slider--ru.jpg");
+  background-size: cover;
+  padding-bottom: 219.58px; }
+
+.wraper {
+  max-width: 1182px;
+  margin: 0 auto; }
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 27.46px; }
+  .header-top span {
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem; }
+
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 240px; }
+  .middle img {
+    width: 155.86px; }
+  .middle nav {
+    width: 525px; }
+    .middle nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold; }
+      .middle nav ul a {
+        color: white;
+        font-size: 18px; }
+
+.button {
+  text-transform: uppercase;
+  background-color: red;
+  width: 200px;
+  text-align: center;
+  font-size: 12px;
+  padding: 12px 0;
+  border-radius: 50px;
+  font-family: 'Myriad Pro';
+  letter-spacing: 1px; }
+  .button-brown {
+    background-color: #C49A6C;
+    border: 2px solid #C49A6C; }
+  .button-white {
+    background-color: white;
+    border: 2px solid white; }
+  .button:hover {
+    background-color: transparent;
+    color: white;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+
+h1 {
+  width: 450px;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 52px; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  width: 617px;
+  line-height: normal;
+  color: white;
+  padding: 32px 0; }
+
+header:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #C49A6C;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+/*# sourceMappingURL=main.css.map */
