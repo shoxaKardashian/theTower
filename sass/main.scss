@@ -11,6 +11,7 @@ $font-openSans: 'Open Sans', sans-serif;
     box-sizing: border-box;
     font-size: 10px;
     text-decoration: none;
+   /* border: 1px solid red;*/
 }
 
 
@@ -111,6 +112,7 @@ p {
     padding: 32px 0;
 }
 
+/* square block in the end of header 
 header:before {
     content: "";
     display: block;
@@ -124,3 +126,98 @@ header:before {
     transform: translate(-50%, -50%);
     transform: rotate(45deg);
 }
+*/
+.projects {
+    background-color: #F1F2F2;
+    padding-top: 57px;
+}
+
+h2 {
+    font-size: 52pt;
+    color: $primary-color;
+    font-family: $font-basic;
+    margin-bottom: 88px;
+}   
+
+.project-inner {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    margin-right:-20px;
+    margin-top: -25px;
+    padding-bottom: 134px;
+   
+}
+
+.item {
+    flex-grow: 1;
+    flex-basis: 25.3333%;
+    /*border: 1px solid red;*/
+    margin-right: 20px;
+    margin-top: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    &:hover {
+        transition: 0.5s;
+        transform: scale(0.98);
+        box-shadow: 0 0 5px 0px $secondary-color;
+    }
+    
+    &-top {
+        background-size: cover;
+        height: 155px;   
+    }
+
+    &-bottom {
+        display: flex;
+        background-color: white;
+        justify-content: space-round;
+        
+        .item-title {
+            padding: 30px 0 30px 34px;
+            font-family: $font-basic;
+            color: #8395A7;
+            font-size: 23px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+    }
+    &:nth-of-type(1) {
+        .item-top {
+            background-image: url("/img/BGs/project-shopping-malls.jpg");
+        }
+    }
+
+    &:nth-of-type(2) {
+        .item-top {
+            background-image: url("/img/BGs/project-business-centres.jpg");
+        }
+    }
+
+    &:nth-of-type(3) {
+        .item-top {
+            background-image: url("/img/BGs/project-retail.jpg");
+        }
+    }
+
+    &:nth-of-type(4) {
+        .item-top {
+            background-image: url("/img/BGs/project-social.jpg");
+        }
+    }
+
+    &:nth-of-type(5) {
+        .item-top {
+            background-image: url("/img/BGs/project-food.jpg");
+        }
+    }
+
+    &:nth-of-type(6) {
+        .item-top {
+            background-image: url("/img/BGs/project-media-alt.jpg");
+        }
+    }
+}
+
+
