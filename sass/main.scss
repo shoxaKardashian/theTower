@@ -57,10 +57,14 @@ header {
             justify-content: space-between;
             font-family: $font-basic;
             font-weight: bold;
-
+            
             a { 
                 color: white;
                 font-size: 18px; 
+
+                a:hover {
+                    border-bottom: 5px solid $secondary-color;
+                }
             }
             
         }
@@ -129,14 +133,15 @@ header:before {
 */
 .projects {
     background-color: #F1F2F2;
-    padding-top: 57px;
+    
 }
 
 h2 {
     font-size: 52pt;
     color: $primary-color;
     font-family: $font-basic;
-    margin-bottom: 88px;
+    padding-bottom: 88px;
+    padding-top: 57px;
 }   
 
 .project-inner {
@@ -182,6 +187,11 @@ h2 {
             text-transform: uppercase;
             letter-spacing: 3px;
         }
+
+        .item-link {
+            border-radious: 50%;
+            width: 15px;
+        }
     }
     &:nth-of-type(1) {
         .item-top {
@@ -220,4 +230,140 @@ h2 {
     }
 }
 
+/*What we do */
+.wedo {
+    padding-bottom: 122px-63px;
+}
+.wedo-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -75px;
+    position: relative;
+  
+
+    .column {
+        flex-grow: 1;
+        flex-basis: 50%;
+        margin-right: 75px;
+        font-family: $font-openSans;
+        font-size: 14px;
+        line-height: normal;
+
+        &-right {
+    
+            .wedo-item {
+        
+                &__icon {
+                    background-image: url("/img/Elements/what-we-do-concept.svg");
+                }
+            }
+            
+        }
+
+        &-left {
+            .wedo-item:nth-child(1)  {
+
+                .wedo-item__icon {
+                    background-image: url("/img/Elements/what-we-do-marketing.svg");
+                }
+            }
+
+            .wedo-item:nth-child(2)  {
+
+                .wedo-item__icon {
+                    background-image: url("/img/Elements/what-we-do-design.svg");
+                }
+            }
+
+            .wedo-item:nth-child(3)  {
+
+                .wedo-item__icon {
+                    background-image: url("/img/Elements/what-we-do-brandmix.svg");
+                }
+            }
+
+            .wedo-item:nth-child(4)  {
+
+                .wedo-item__icon {
+                    background-image: url("/img/Elements/what-we-do-management.svg");
+                }
+            }
+        }
+
+
+        
+
+       /* &-right::after {
+            content: 'fasfsaafd';
+            display: block;
+            background-color: $secondary-color;
+            width: 600px;
+            height: 700px;
+            position: absolute;
+            z-index: 100;
+            top: 10px; 
+        }
+            */
+        
+    }
+}
+
+.wedo-item {
+    padding-bottom: 63px;
+
+    &__icon {
+        /*background-image: url("/img/Elements/what-we-do-brandmix.svg");*/
+        background-repeat: no-repeat;
+        height: 80px; /*??????????*/
+     
+    }
+
+    h3 {
+        font-family: $font-basic;
+        color: black;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin: 22px 0; 
+    }
+
+    &__text {
+
+    }
+
+    &__pic {
+        background-image: url("/img/Elements/what-we-do-image.jpg");
+        background-size: cover;
+        height: 900px;
+        margin-top: 63px;
+    }
+}
+
+
+.partners {
+    background-image: url("/img/BGs/partners-bg.jpg");
+
+    h2 {
+        color: white;
+    }
+
+    &-row {
+        display: flex;
+        justify-content: center;
+        margin-right: -25px
+    }
+
+    &-item {
+        flex-grow: 1;
+        margin-right: 22px;
+        height: 75px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:first-child {
+            background-image: url("/img/Logos/partner-logo-1.png");
+        }
+
+    }
+}
 
