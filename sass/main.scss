@@ -16,7 +16,7 @@ $font-openSans: 'Open Sans', sans-serif;
 
 
 header {
-    background-image: url("/img/BGs/hp-imag-slider--ru.jpg");
+    background-image: url("../img/BGs/hp-imag-slider--ru.jpg");
     background-size: cover;
     padding-bottom: 219.58px;
 }
@@ -195,37 +195,37 @@ h2 {
     }
     &:nth-of-type(1) {
         .item-top {
-            background-image: url("/img/BGs/project-shopping-malls.jpg");
+            background-image: url("../img/BGs/project-shopping-malls.jpg");
         }
     }
 
     &:nth-of-type(2) {
         .item-top {
-            background-image: url("/img/BGs/project-business-centres.jpg");
+            background-image: url("../img/BGs/project-business-centres.jpg");
         }
     }
 
     &:nth-of-type(3) {
         .item-top {
-            background-image: url("/img/BGs/project-retail.jpg");
+            background-image: url("../img/BGs/project-retail.jpg");
         }
     }
 
     &:nth-of-type(4) {
         .item-top {
-            background-image: url("/img/BGs/project-social.jpg");
+            background-image: url("../img/BGs/project-social.jpg");
         }
     }
 
     &:nth-of-type(5) {
         .item-top {
-            background-image: url("/img/BGs/project-food.jpg");
+            background-image: url("../img/BGs/project-food.jpg");
         }
     }
 
     &:nth-of-type(6) {
         .item-top {
-            background-image: url("/img/BGs/project-media-alt.jpg");
+            background-image: url("../img/BGs/project-media-alt.jpg");
         }
     }
 }
@@ -254,7 +254,7 @@ h2 {
             .wedo-item {
         
                 &__icon {
-                    background-image: url("/img/Elements/what-we-do-concept.svg");
+                    background-image: url("../img/Elements/what-we-do-concept.svg");
                 }
             }
             
@@ -264,28 +264,28 @@ h2 {
             .wedo-item:nth-child(1)  {
 
                 .wedo-item__icon {
-                    background-image: url("/img/Elements/what-we-do-marketing.svg");
+                    background-image: url("../img/Elements/what-we-do-marketing.svg");
                 }
             }
 
             .wedo-item:nth-child(2)  {
 
                 .wedo-item__icon {
-                    background-image: url("/img/Elements/what-we-do-design.svg");
+                    background-image: url("../img/Elements/what-we-do-design.svg");
                 }
             }
 
             .wedo-item:nth-child(3)  {
 
                 .wedo-item__icon {
-                    background-image: url("/img/Elements/what-we-do-brandmix.svg");
+                    background-image: url("../img/Elements/what-we-do-brandmix.svg");
                 }
             }
 
             .wedo-item:nth-child(4)  {
 
                 .wedo-item__icon {
-                    background-image: url("/img/Elements/what-we-do-management.svg");
+                    background-image: url("../img/Elements/what-we-do-management.svg");
                 }
             }
         }
@@ -332,7 +332,7 @@ h2 {
     }
 
     &__pic {
-        background-image: url("/img/Elements/what-we-do-image.jpg");
+        background-image: url("../img/Elements/what-we-do-image.jpg");
         background-size: cover;
         height: 900px;
         margin-top: 63px;
@@ -341,7 +341,8 @@ h2 {
 
 
 .partners {
-    background-image: url("/img/BGs/partners-bg.jpg");
+    background-image: url("../img/BGs/partners-bg.jpg");
+    background-repeat: no-repeat;
 
     h2 {
         color: white;
@@ -349,21 +350,127 @@ h2 {
 
     &-row {
         display: flex;
-        justify-content: center;
-        margin-right: -25px
+        justify-content: flex-start;
+        margin-right: -25px;
+        padding-bottom: 153px;
+        align-items: center;
     }
 
     &-item {
         flex-grow: 1;
         margin-right: 22px;
-        height: 75px;
+        height: 100px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        border: 1px solid white;
 
         &:first-child {
-            background-image: url("/img/Logos/partner-logo-1.png");
+            background-image: url("../img/Logos/partner-logo-1.png");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../img/Logos/partner-logo-2.png");
+        }
+
+        &:last-child {
+            background-image: url("../img/Logos/partner-logo-3.png");
         }
 
     }
 }
 
+
+/* Footer */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 105px 0 ;
+
+}
+
+.footer-column-right {
+
+    font-family: $font-basic;
+}
+
+.contacts {
+        margin: 35px 0;
+
+        &-info {
+            
+            font-size: 15px;
+            color: $primary-color;
+            padding: 5px 0;
+        }
+}
+
+.social {
+    display: flex;
+    margin-right: -10px;
+
+    &-info {
+        margin-right: 10px;
+    }
+}
+
+
+.footer-column-left {
+    display: flex;
+    margin-right: -40px;
+}
+
+.left {
+    margin-right: 40px;
+    width: 300px;
+
+    h4 {
+        font-family: $font-basic;
+        color: $primary-color;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: 3px solid $secondary-color;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        li {
+            color: $primary-color;
+            font-family: $font-basic;
+            padding: 5px 0;
+            font-size: 15px;
+        }
+    }
+}
+
+.footer-bottom {
+    
+    background-color: #F1F2F2;
+    padding: 10px 0;
+    
+ 
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rights {
+        color: $primary-color;
+        font-family: $font-basic;
+        font-size: 12px;
+    }
+
+    img {
+        height: 50px;
+    }
+
+    span {
+        color: $font-basic;
+        font-family: $font-basic;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+}

@@ -8,7 +8,7 @@
 }
 
 header {
-  background-image: url("/img/BGs/hp-imag-slider--ru.jpg");
+  background-image: url("../img/BGs/hp-imag-slider--ru.jpg");
   background-size: cover;
   padding-bottom: 219.58px;
 }
@@ -197,22 +197,22 @@ h2 {
   width: 15px;
 }
 .item:nth-of-type(1) .item-top {
-  background-image: url("/img/BGs/project-shopping-malls.jpg");
+  background-image: url("../img/BGs/project-shopping-malls.jpg");
 }
 .item:nth-of-type(2) .item-top {
-  background-image: url("/img/BGs/project-business-centres.jpg");
+  background-image: url("../img/BGs/project-business-centres.jpg");
 }
 .item:nth-of-type(3) .item-top {
-  background-image: url("/img/BGs/project-retail.jpg");
+  background-image: url("../img/BGs/project-retail.jpg");
 }
 .item:nth-of-type(4) .item-top {
-  background-image: url("/img/BGs/project-social.jpg");
+  background-image: url("../img/BGs/project-social.jpg");
 }
 .item:nth-of-type(5) .item-top {
-  background-image: url("/img/BGs/project-food.jpg");
+  background-image: url("../img/BGs/project-food.jpg");
 }
 .item:nth-of-type(6) .item-top {
-  background-image: url("/img/BGs/project-media-alt.jpg");
+  background-image: url("../img/BGs/project-media-alt.jpg");
 }
 
 /*What we do */
@@ -253,19 +253,19 @@ h2 {
        */
 }
 .wedo-inner .column-right .wedo-item__icon {
-  background-image: url("/img/Elements/what-we-do-concept.svg");
+  background-image: url("../img/Elements/what-we-do-concept.svg");
 }
 .wedo-inner .column-left .wedo-item:nth-child(1) .wedo-item__icon {
-  background-image: url("/img/Elements/what-we-do-marketing.svg");
+  background-image: url("../img/Elements/what-we-do-marketing.svg");
 }
 .wedo-inner .column-left .wedo-item:nth-child(2) .wedo-item__icon {
-  background-image: url("/img/Elements/what-we-do-design.svg");
+  background-image: url("../img/Elements/what-we-do-design.svg");
 }
 .wedo-inner .column-left .wedo-item:nth-child(3) .wedo-item__icon {
-  background-image: url("/img/Elements/what-we-do-brandmix.svg");
+  background-image: url("../img/Elements/what-we-do-brandmix.svg");
 }
 .wedo-inner .column-left .wedo-item:nth-child(4) .wedo-item__icon {
-  background-image: url("/img/Elements/what-we-do-management.svg");
+  background-image: url("../img/Elements/what-we-do-management.svg");
 }
 
 .wedo-item {
@@ -286,14 +286,15 @@ h2 {
   margin: 22px 0;
 }
 .wedo-item__pic {
-  background-image: url("/img/Elements/what-we-do-image.jpg");
+  background-image: url("../img/Elements/what-we-do-image.jpg");
   background-size: cover;
   height: 900px;
   margin-top: 63px;
 }
 
 .partners {
-  background-image: url("/img/BGs/partners-bg.jpg");
+  background-image: url("../img/BGs/partners-bg.jpg");
+  background-repeat: no-repeat;
 }
 .partners h2 {
   color: white;
@@ -302,22 +303,125 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-right: -25px;
+  padding-bottom: 153px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .partners-item {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 22px;
-  height: 75px;
+  height: 100px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  border: 1px solid white;
 }
 .partners-item:first-child {
-  background-image: url("/img/Logos/partner-logo-1.png");
+  background-image: url("../img/Logos/partner-logo-1.png");
+}
+.partners-item:nth-child(2) {
+  background-image: url("../img/Logos/partner-logo-2.png");
+}
+.partners-item:last-child {
+  background-image: url("../img/Logos/partner-logo-3.png");
+}
+
+/* Footer */
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 105px 0;
+}
+
+.footer-column-right {
+  font-family: "PT Sans", sans-serif;
+}
+
+.contacts {
+  margin: 35px 0;
+}
+.contacts-info {
+  font-size: 15px;
+  color: #414042;
+  padding: 5px 0;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -10px;
+}
+.social-info {
+  margin-right: 10px;
+}
+
+.footer-column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -40px;
+}
+
+.left {
+  margin-right: 40px;
+  width: 300px;
+}
+.left h4 {
+  font-family: "PT Sans", sans-serif;
+  color: #414042;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #C49A6C;
+  margin-bottom: 20px;
+}
+.left ul li {
+  color: #414042;
+  font-family: "PT Sans", sans-serif;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  background-color: #F1F2F2;
+  padding: 10px 0;
+}
+
+.footer-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-inner .rights {
+  color: #414042;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+}
+.footer-inner img {
+  height: 50px;
+}
+.footer-inner span {
+  color: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
